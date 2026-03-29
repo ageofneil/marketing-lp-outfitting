@@ -49,7 +49,7 @@ module.exports = async function handler(req, res) {
     }
 
     // 2. Subscribe profile with consent and add to list
-    const subRes = await fetch('https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/', {
+    await fetch('https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/', {
       method: 'POST',
       headers,
       body: JSON.stringify({
@@ -70,8 +70,6 @@ module.exports = async function handler(req, res) {
         }
       })
     });
-    const subData = await subRes.json();
-    console.log('Klaviyo subscription response:', JSON.stringify(subData));
 
     // 3. Track lead submitted event
     await fetch('https://a.klaviyo.com/api/events/', {
