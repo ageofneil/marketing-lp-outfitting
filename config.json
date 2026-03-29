@@ -30,21 +30,21 @@
         "title": "Spring Commissioning",
         "body": "Getting your boat back in the water after winter? Don't guess. Our techs walk you through every step and send you a personalised parts list before you splash.",
         "cta_text": "Book a free session",
-        "cta_href": "spring.html",
+        "cta_href": "spring",
         "image": "https://placehold.co/480x300/f0fdf4/86efac?text=Spring+Launch"
       },
       {
         "title": "Electronics Upgrades",
         "body": "Thinking about a new chartplotter, autopilot, or VHF? Talk to a tech before you buy. We'll tell you exactly what's compatible with your boat — and what to skip.",
         "cta_text": "Get buying advice",
-        "cta_href": "electronics.html",
+        "cta_href": "electronics",
         "image": "https://placehold.co/480x300/f0f9ff/93c5fd?text=Marine+Electronics"
       },
       {
         "title": "Diagnostics & Troubleshooting",
         "body": "Boat acting up and you're not sure why? Describe the problem to one of our techs and we'll help you figure out what's wrong before you spend money on a guess.",
         "cta_text": "Get free diagnostics help",
-        "cta_href": "diagnostics.html",
+        "cta_href": "diagnostics",
         "image": "https://placehold.co/480x300/fefce8/fde047?text=Diagnostics"
       }
     ]
@@ -87,14 +87,14 @@
     "headline": "Not sure where to start?",
     "subheadline": "Tell us about your boat and what you're trying to do. We'll point you in the right direction — no commitment required.",
     "cta_text": "Talk to a tech for free",
-    "cta_href": "index.html#form"
+    "cta_href": "/#form"
   },
   "footer": {
     "copyright": "© 2026 BoatExperts. All rights reserved.",
     "links": [
-      { "label": "Spring Commissioning", "href": "spring.html" },
-      { "label": "Electronics", "href": "electronics.html" },
-      { "label": "Diagnostics", "href": "diagnostics.html" },
+      { "label": "Spring Commissioning", "href": "spring" },
+      { "label": "Electronics", "href": "electronics" },
+      { "label": "Diagnostics", "href": "diagnostics" },
       { "label": "Privacy", "href": "/privacy" },
       { "label": "Terms", "href": "/terms" }
     ]

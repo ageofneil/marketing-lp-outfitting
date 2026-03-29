@@ -119,7 +119,7 @@
   "footer": {
     "copyright": "© 2026 BoatExperts. All rights reserved.",
     "links": [
-      { "label": "Home", "href": "index.html" },
+      { "label": "Home", "href": "/" },
       { "label": "Privacy", "href": "/privacy" },
       { "label": "Terms", "href": "/terms" }
     ]
