@@ -101,21 +101,11 @@ Deployed on [Vercel](https://vercel.com), triggered automatically by pushing to 
 
 | Branch | Environment | URL |
 |---|---|---|
-| `develop` | Local only — not deployed | — |
 | `main` | Production | https://boathelpnetwork.com |
 
 **Workflow:**
 1. Do all work and testing locally with Docker
-2. Push to `develop` → deploys to preview
-3. Merge `develop` into `main` → deploys to production
-
-```bash
-# Merge develop to production
-git checkout main
-git merge develop
-git push origin main
-git checkout develop
-```
+2. Push to `main` → deploys to production
 
 ---
 
