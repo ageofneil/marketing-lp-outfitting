@@ -99,10 +99,10 @@ dist/              # build output — this is what gets deployed
 
 Deployed on [Vercel](https://vercel.com), triggered automatically by pushing to GitHub.
 
-| Branch | Environment |
-|---|---|
-| `develop` | Preview |
-| `main` | Production |
+| Branch | Environment | URL |
+|---|---|---|
+| `develop` | Preview | https://marketing-lp-outfitting.vercel.app |
+| `main` | Production | https://boathelpnetwork.com |
 
 **Workflow:**
 1. Do all work and testing locally with Docker
