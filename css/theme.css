@@ -1,13 +1,12 @@
 /* ==========================================================================
-   Example Site — Theme
+   BoatExperts — Theme
    CSS custom property overrides only.
-   These values replace the defaults defined in shared/css/base.css.
+   These values replace the defaults defined in base.css.
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  --color-primary: #0057ff;
-  --color-secondary: #00c2a8;
-  --color-accent: #ff5c35;
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Inter', sans-serif;
 }

@@ -68,7 +68,7 @@ def main():
             observer.schedule(handler, str(path), recursive=True)
 
     for f in WATCH_FILES:
-        observer.schedule(handler, str(BASE_DIR), recursive=False)
+        observer.schedule(handler, str(BASE_DIR / f), recursive=False)
 
     observer.start()
     try:

@@ -17,7 +17,7 @@ module.exports = async function handler(req, res) {
   const headers = {
     'Authorization': `Klaviyo-API-Key ${apiKey}`,
     'Content-Type': 'application/json',
-    'revision': '2024-02-15'
+    'revision': '2024-10-15'
   };
 
   try {

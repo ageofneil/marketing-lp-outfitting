@@ -1,13 +1,8 @@
 {
-  "site_name": "BoatExperts",
   "meta": {
     "title": "BoatExperts — Free Marine Electronics Buying Advice From a Certified Tech",
     "description": "Not sure which chartplotter, autopilot, or VHF to buy — or if they'll even work together on your boat? Talk to a certified marine electronics tech for free before you spend a dollar.",
     "og_image": "assets/og-image.png"
-  },
-  "logo": {
-    "text": "BoatExperts",
-    "image": null
   },
   "phone": "+1 (800) 555-0192",
   "advisors": [
@@ -119,8 +114,7 @@
   },
   "form": {
     "headline": "Get your free electronics consultation",
-    "subheadline": "Tell us your boat and what you're trying to upgrade. Your tech will reach out within 24 hours.",
-    "embed_code": null
+    "subheadline": "Tell us your boat and what you're trying to upgrade. Your tech will reach out within 24 hours."
   },
   "footer": {
     "copyright": "© 2026 BoatExperts. All rights reserved.",
@@ -129,6 +123,5 @@
       { "label": "Privacy", "href": "/privacy" },
       { "label": "Terms", "href": "/terms" }
     ]
-  },
-  "theme": "theme.css"
+  }
 }

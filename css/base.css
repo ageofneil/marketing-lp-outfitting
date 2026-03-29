@@ -570,18 +570,6 @@ p:last-child {
   margin-bottom: var(--space-10);
 }
 
-.lead-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  text-align: left;
-}
-
-.lead-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4);
-}
 
 .form-group {
   display: flex;
@@ -842,35 +830,6 @@ p:last-child {
   margin-bottom: var(--space-4);
 }
 
-/* Options (step 1) */
-.advisor-options {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  margin-bottom: var(--space-2);
-}
-
-.advisor-option {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  cursor: pointer;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
-  font-size: var(--font-size-sm);
-}
-
-.advisor-option:hover {
-  border-color: var(--color-primary);
-  background-color: rgb(0 87 255 / 0.04);
-}
-
-.advisor-option input[type="radio"] {
-  accent-color: var(--color-primary);
-  flex-shrink: 0;
-}
 
 .form-label-optional {
   font-weight: var(--font-weight-normal);

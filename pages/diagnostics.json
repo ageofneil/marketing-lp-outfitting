@@ -1,13 +1,8 @@
 {
-  "site_name": "BoatExperts",
   "meta": {
     "title": "BoatExperts — Free Marine Diagnostics Help From a Certified Tech",
     "description": "Boat acting up and you're not sure why? Talk to a certified marine technician for free before you spend money guessing at parts or paying for a shop visit.",
     "og_image": "assets/og-image.png"
-  },
-  "logo": {
-    "text": "BoatExperts",
-    "image": null
   },
   "phone": "+1 (800) 555-0192",
   "advisors": [
@@ -119,8 +114,7 @@
   },
   "form": {
     "headline": "Describe your boat problem — we'll find the cause",
-    "subheadline": "Tell us the symptoms and your engine type. Your tech will reach out within 24 hours.",
-    "embed_code": null
+    "subheadline": "Tell us the symptoms and your engine type. Your tech will reach out within 24 hours."
   },
   "footer": {
     "copyright": "© 2026 BoatExperts. All rights reserved.",
@@ -129,6 +123,5 @@
       { "label": "Privacy", "href": "/privacy" },
       { "label": "Terms", "href": "/terms" }
     ]
-  },
-  "theme": "theme.css"
+  }
 }
