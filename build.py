@@ -72,7 +72,7 @@ def build() -> None:
         page_config_path = PAGES_DIR / f"{stem}.json"
 
         if page_config_path.exists():
-            page_config = load_config(page_config_path)
+            page_config = {**site_config, **load_config(page_config_path)}
             label = f"{page_path.name} (using {stem}.json)"
         else:
             page_config = site_config
