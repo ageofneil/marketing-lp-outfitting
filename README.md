@@ -101,7 +101,7 @@ Deployed on [Vercel](https://vercel.com), triggered automatically by pushing to 
 
 | Branch | Environment | URL |
 |---|---|---|
-| `develop` | Preview | https://marketing-lp-outfitting.vercel.app |
+| `develop` | Local only — not deployed | — |
 | `main` | Production | https://boathelpnetwork.com |
 
 **Workflow:**
