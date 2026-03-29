@@ -16,8 +16,9 @@ module.exports = async function handler(req, res) {
 
   const headers = {
     'Authorization': `Klaviyo-API-Key ${apiKey}`,
-    'Content-Type': 'application/json',
-    'revision': '2024-10-15'
+    'Content-Type': 'application/vnd.api+json',
+    'Accept': 'application/vnd.api+json',
+    'revision': '2026-01-15'
   };
 
   const listId = process.env.KLAVIYO_LIST_ID || 'TGa4Bx';
@@ -47,14 +48,30 @@ module.exports = async function handler(req, res) {
       return res.status(500).json({ error: 'Failed to create profile' });
     }
 
-    // 2. Add profile to list
-    await fetch(`https://a.klaviyo.com/api/lists/${listId}/relationships/profiles/`, {
+    // 2. Subscribe profile with consent and add to list
+    const subRes = await fetch('https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/', {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        data: [{ type: 'profile', id: profileId }]
+        data: {
+          type: 'profile-subscription-bulk-create-job',
+          attributes: {
+            historical_import: false,
+            subscriptions: [{
+              channels: { email: ['MARKETING'] },
+              profile: { data: { type: 'profile', id: profileId } }
+            }]
+          },
+          relationships: {
+            list: {
+              data: { type: 'list', id: listId }
+            }
+          }
+        }
       })
     });
+    const subData = await subRes.json();
+    console.log('Klaviyo subscription response:', JSON.stringify(subData));
 
     // 3. Track lead submitted event
     await fetch('https://a.klaviyo.com/api/events/', {
