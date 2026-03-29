@@ -20,39 +20,51 @@ module.exports = async function handler(req, res) {
     'revision': '2024-10-15'
   };
 
+  const listId = process.env.KLAVIYO_LIST_ID || 'TGa4Bx';
+
   try {
-    // 1. Create/update profile
-    const profileRes = await fetch('https://a.klaviyo.com/api/profile-import/', {
+    // 1. Subscribe profile to list (creates/updates profile and marks as subscribed)
+    await fetch('https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/', {
       method: 'POST',
       headers,
       body: JSON.stringify({
         data: {
-          type: 'profile',
+          type: 'profile-subscription-bulk-create-job',
           attributes: {
-            email,
-            first_name: firstName,
-            last_name: lastName,
-            properties: {
-              topic,
-              boat_type,
-              boat_length,
-              notes,
-              advisor
-            }
+            profiles: {
+              data: [{
+                type: 'profile',
+                attributes: {
+                  email,
+                  first_name: firstName,
+                  last_name: lastName,
+                  properties: { topic, boat_type, boat_length, notes, advisor },
+                  subscriptions: {
+                    email: { marketing: { consent: 'SUBSCRIBED' } }
+                  }
+                }
+              }]
+            },
+            list_id: listId
           }
         }
       })
     });
 
+    // 2. Get profile ID for event tracking
+    const profileRes = await fetch(`https://a.klaviyo.com/api/profiles/?filter=equals(email,"${encodeURIComponent(email)}")`, {
+      method: 'GET',
+      headers
+    });
     const profileData = await profileRes.json();
-    const profileId = profileData?.data?.id;
+    const profileId = profileData?.data?.[0]?.id;
 
     if (!profileId) {
-      console.error('Klaviyo profile error:', profileData);
-      return res.status(500).json({ error: 'Failed to create profile' });
+      console.error('Klaviyo profile lookup error:', profileData);
+      return res.status(500).json({ error: 'Failed to find profile' });
     }
 
-    // 2. Track lead submitted event
+    // 3. Track lead submitted event
     await fetch('https://a.klaviyo.com/api/events/', {
       method: 'POST',
       headers,
