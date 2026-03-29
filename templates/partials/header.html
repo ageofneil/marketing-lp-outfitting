@@ -1,0 +1,21 @@
+<div class="header-inner container">
+  <a href="#" class="site-logo" aria-label="{{ config.site_name }} home">
+    {% if config.logo.image %}
+    <img src="{{ config.logo.image }}" alt="{{ config.site_name }} logo" class="logo-image" />
+    {% else %}
+    <span class="logo-text">{{ config.logo.text }}</span>
+    {% endif %}
+  </a>
+
+  {% if config.nav %}
+  <nav class="site-nav" aria-label="Primary navigation">
+    <ul class="nav-list" role="list">
+      {% for item in config.nav %}
+      <li class="nav-item">
+        <a href="{{ item.href }}" class="nav-link">{{ item.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</div>

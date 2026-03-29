@@ -1,0 +1,15 @@
+<div class="footer-inner container">
+  <p class="footer-copyright">{{ config.footer.copyright }}</p>
+
+  {% if config.footer.links %}
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <ul class="footer-nav-list" role="list">
+      {% for link in config.footer.links %}
+      <li class="footer-nav-item">
+        <a href="{{ link.href }}" class="footer-nav-link">{{ link.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</div>

@@ -1,0 +1,111 @@
+{% extends "home_base.html" %}
+
+{% block head %}
+<meta name="description" content="{{ config.meta.description }}" />
+<title>{{ config.meta.title }}</title>
+{% if config.meta.og_image %}
+<meta property="og:title" content="{{ config.meta.title }}" />
+<meta property="og:description" content="{{ config.meta.description }}" />
+<meta property="og:image" content="{{ config.meta.og_image }}" />
+<meta property="og:type" content="website" />
+{% endif %}
+{% endblock %}
+
+{% block hero %}
+<div class="container home-hero-inner">
+  <div class="home-hero-content">
+    <h1 class="home-hero-title">{{ config.hero.headline }}</h1>
+    <p class="home-hero-subtitle">{{ config.hero.subheadline }}</p>
+    <div class="home-hero-actions">
+      <a href="{{ config.hero.primary_cta.href }}" class="btn btn-primary">{{ config.hero.primary_cta.text }}</a>
+      <a href="{{ config.hero.secondary_cta.href }}" class="btn btn-secondary">{{ config.hero.secondary_cta.text }}</a>
+    </div>
+  </div>
+  {% if config.hero.image %}
+  <div class="home-hero-image">
+    <img src="{{ config.hero.image }}" alt="{{ config.site_name }}" />
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block services %}
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-headline">{{ config.services.headline }}</h2>
+    <p class="section-subheadline">{{ config.services.subheadline }}</p>
+  </div>
+  <div class="services-grid">
+    {% for item in config.services['items'] %}
+    <div class="service-card">
+      {% if item.image %}
+      <div class="service-card-image">
+        <img src="{{ item.image }}" alt="{{ item.title }}" />
+      </div>
+      {% endif %}
+      <div class="service-card-body">
+        <h3 class="service-card-title">{{ item.title }}</h3>
+        <p class="service-card-text">{{ item.body }}</p>
+        <a href="{{ item.cta_href }}" class="service-card-cta">{{ item.cta_text }} →</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block about %}
+<div class="container about-inner">
+  <div class="about-content">
+    <h2 class="section-headline" style="text-align:left;">{{ config.about.headline }}</h2>
+    {% for paragraph in config.about.body.split('\n\n') %}
+    <p class="about-body">{{ paragraph }}</p>
+    {% endfor %}
+    {% if config.about.stats %}
+    <div class="stats-row">
+      {% for stat in config.about.stats %}
+      <div class="stat-item">
+        <span class="stat-value">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% if config.about.image %}
+  <div class="about-image">
+    <img src="{{ config.about.image }}" alt="About {{ config.site_name }}" />
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block testimonials %}
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-headline">{{ config.testimonials.headline }}</h2>
+  </div>
+  <div class="testimonials-grid">
+    {% for item in config.testimonials['items'] %}
+    <div class="testimonial-card">
+      <blockquote class="testimonial-quote">"{{ item.quote }}"</blockquote>
+      <div class="testimonial-author">
+        <img src="{{ item.avatar }}" alt="{{ item.name }}" class="testimonial-avatar" />
+        <div class="testimonial-meta">
+          <span class="testimonial-name">{{ item.name }}</span>
+          <span class="testimonial-role">{{ item.role }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block cta_band %}
+<div class="container cta-band-inner" id="cta">
+  <h2 class="cta-band-headline">{{ config.cta_band.headline }}</h2>
+  <p class="cta-band-sub">{{ config.cta_band.subheadline }}</p>
+  <a href="{{ config.cta_band.cta_href }}" class="btn btn-primary">{{ config.cta_band.cta_text }}</a>
+</div>
+{% endblock %}

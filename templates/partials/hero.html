@@ -1,0 +1,20 @@
+<div class="hero-inner container">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ config.hero.headline }}</h1>
+    <p class="hero-subtitle">{{ config.hero.subheadline }}</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-open-advisor>{{ config.hero.cta_text }}</button>
+      {% if config.phone %}
+      <a href="tel:{{ config.phone }}" class="hero-phone">or call {{ config.phone }}</a>
+      {% endif %}
+    </div>
+    {% if config.hero.secondary_cta %}
+    <a href="{{ config.hero.secondary_cta.href }}" class="hero-secondary-cta">{{ config.hero.secondary_cta.text }} →</a>
+    {% endif %}
+  </div>
+  {% if config.hero.image %}
+  <div class="hero-image">
+    <img src="{{ config.hero.image }}" alt="{{ config.hero.headline }}" />
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% block head %}
+  {% include "partials/head.html" %}
+  {% endblock %}
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  {% include "partials/pixel.html" %}
+</head>
+<body>
+  {% if config.gtm_id %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config.gtm_id }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% endif %}
+
+  <main role="main">
+
+    <section class="hero" aria-label="Hero">
+      {% block hero %}{% endblock %}
+    </section>
+
+    <section class="social-proof" aria-label="Trusted by">
+      {% block social_proof %}{% endblock %}
+    </section>
+
+    <div class="content-sections">
+      {% block content %}{% endblock %}
+    </div>
+
+    <section class="form-section" id="form" aria-label="Sign up form">
+      {% block form %}
+      {% include "partials/form.html" %}
+      {% endblock %}
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    {% block footer %}
+    {% include "partials/footer.html" %}
+    {% endblock %}
+  </footer>
+
+  {% include "partials/advisor_modal.html" %}
+
+  <script src="js/main.js" defer></script>
+  <script src="js/advisor_modal.js" defer></script>
+  {% block scripts %}{% endblock %}
+
+</body>
+</html>

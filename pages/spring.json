@@ -1,0 +1,135 @@
+{
+  "site_name": "BoatExperts",
+  "gtm_id": "",
+  "meta": {
+    "title": "BoatExperts — Free Spring Commissioning Help From a Certified Marine Tech",
+    "description": "Not sure what to check before you splash? Get a free session with a certified marine technician who'll walk you through spring commissioning and send you a personalised parts list.",
+    "og_image": "assets/og-image.png"
+  },
+  "logo": {
+    "text": "BoatExperts",
+    "image": null
+  },
+  "phone": "+1 (800) 555-0192",
+  "advisors": [
+    {
+      "name": "Ray Costello",
+      "specialty": "Spring Commissioning Specialist",
+      "bio": "15 years commissioning inboard and outboard boats on the Great Lakes. Ray has seen every winterisation mistake in the book — and knows exactly how to find them before they become tow bills.",
+      "avatar": "https://placehold.co/96x96/dbeafe/3b82f6?text=RC"
+    },
+    {
+      "name": "Susan Holt",
+      "specialty": "Engine & Systems Technician",
+      "bio": "ABYC-certified with a decade of hands-on experience across gasoline and diesel inboards. Specialises in pre-season engine checks, cooling systems, and fuel system inspections.",
+      "avatar": "https://placehold.co/96x96/fce7f3/db2777?text=SH"
+    },
+    {
+      "name": "Pete Gallagher",
+      "specialty": "Outboard & Sterndrive Tech",
+      "bio": "8 years servicing Yamaha, Mercury, and Volvo Penta drives along the Gulf Coast. If it got winterised, Pete knows what to look for when it comes back out.",
+      "avatar": "https://placehold.co/96x96/dcfce7/16a34a?text=PG"
+    }
+  ],
+  "modal": {
+    "topic": "spring commissioning"
+  },
+  "hero": {
+    "headline": "Don't guess on spring launch. Talk to a tech first.",
+    "subheadline": "A missed impeller, a cracked hose, a dead battery — small things that turn a good day into a tow bill. Get a free session with a certified marine tech who'll tell you exactly what to check before you splash.",
+    "cta_text": "Get Free Launch Checklist",
+    "cta_href": "#form",
+    "form_note": "Free. No commitment. We'll match you with a tech within 24 hours.",
+    "secondary_cta": { "text": "See how it works", "href": "#how-it-works" },
+    "image": "https://placehold.co/600x480/f0fdf4/86efac?text=Spring+launch"
+  },
+  "social_proof": {
+    "headline": "We know engines from",
+    "logos": [
+      { "name": "Yamaha", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Yamaha" },
+      { "name": "Mercury", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Mercury" },
+      { "name": "Volvo Penta", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Volvo+Penta" },
+      { "name": "Evinrude", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Evinrude" },
+      { "name": "Honda Marine", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Honda+Marine" }
+    ]
+  },
+  "benefits": {
+    "headline": "Spring commissioning is easy to get wrong",
+    "subheadline": "Most problems that ruin a first outing were preventable. A quick session before you splash costs nothing — a tow or a blown engine costs a lot.",
+    "items": [
+      {
+        "title": "Did winterisation go all the way?",
+        "body": "Fuel left in carbs, water in the cooling system, a battery that wasn't trickle-charged — your tech will ask the right questions to spot anything that wasn't done properly last fall."
+      },
+      {
+        "title": "What actually needs replacing?",
+        "body": "Impellers, zincs, belts, filters, hoses — some need to go every season regardless. Others only when they show wear. We'll tell you what's worth replacing now and what can wait."
+      },
+      {
+        "title": "Your exact parts list, before you buy",
+        "body": "No more showing up at the marina store and guessing. Your tech will give you a complete parts list for your engine, hull, and systems — down to part numbers where it matters."
+      }
+    ]
+  },
+  "how_it_works": {
+    "headline": "How it works",
+    "subheadline": "Tell us about your boat. We'll tell you exactly what to do before you splash.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell us about your boat and how it was stored",
+        "body": "Engine type, hull, how it was winterised, how long it's been sitting — two minutes to fill in. The more detail, the more useful your session.",
+        "image": "https://placehold.co/560x380/f0f9ff/93c5fd?text=Your+boat+%26+storage"
+      },
+      {
+        "number": "02",
+        "title": "Walk through it with a certified tech",
+        "body": "A marine technician who knows your engine type will walk you through every system on a live video call — what to inspect, what to test, and what to replace before you go near the water.",
+        "image": "https://placehold.co/560x380/f0fdf4/86efac?text=Walk+through+with+tech"
+      },
+      {
+        "number": "03",
+        "title": "Get your personalised commissioning checklist",
+        "body": "Before the call ends you'll have a complete checklist and parts list tailored to your boat. Print it, take it to the marina, and launch with confidence.",
+        "image": "https://placehold.co/560x380/fefce8/fde047?text=Your+checklist"
+      }
+    ]
+  },
+  "testimonials": {
+    "headline": "What boaters said after their session",
+    "items": [
+      {
+        "quote": "I've been launching the same boat for six years and still learned three things I'd been doing wrong. Caught a cracked impeller housing before it became a tow bill.",
+        "name": "Dave Kowalski",
+        "role": "2019 Sea Ray 230 SLX, Lake Michigan",
+        "avatar": "https://placehold.co/48x48/dbeafe/3b82f6?text=DK"
+      },
+      {
+        "quote": "First season with a new-to-me boat. Had no idea where to start. My tech walked me through everything in 45 minutes. Splashed two days later without a single issue.",
+        "name": "Tom Briggs",
+        "role": "2015 Grady-White Canyon 271, Cape Cod",
+        "avatar": "https://placehold.co/48x48/dcfce7/22c55e?text=TB"
+      },
+      {
+        "quote": "They gave me a parts list before I even picked up the phone to order. Saved me two trips to the marine store and launched a week earlier than usual.",
+        "name": "Karen Mills",
+        "role": "2017 Chaparral 243 VRX, Chesapeake Bay",
+        "avatar": "https://placehold.co/48x48/fef9c3/eab308?text=KM"
+      }
+    ]
+  },
+  "form": {
+    "headline": "Get your free spring commissioning session",
+    "subheadline": "Tell us your boat and how it was stored. Your tech will reach out within 24 hours.",
+    "embed_code": null
+  },
+  "footer": {
+    "copyright": "© 2026 BoatExperts. All rights reserved.",
+    "links": [
+      { "label": "Home", "href": "index.html" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ]
+  },
+  "theme": "theme.css"
+}

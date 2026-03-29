@@ -1,0 +1,11 @@
+services:
+  builder:
+    build: .
+    volumes:
+      - .:/app
+
+  watch:
+    build: .
+    volumes:
+      - .:/app
+    entrypoint: ["python", "watch.py"]

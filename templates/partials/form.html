@@ -1,0 +1,12 @@
+{% if config.form %}
+<div class="container">
+  {% if config.form.headline %}
+  <h2 class="form-section-headline">{{ config.form.headline }}</h2>
+  {% endif %}
+  {% if config.form.embed_code %}
+  <div class="form-embed">
+    {{ config.form.embed_code }}
+  </div>
+  {% endif %}
+</div>
+{% endif %}

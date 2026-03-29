@@ -1,0 +1,135 @@
+{
+  "site_name": "BoatExperts",
+  "gtm_id": "",
+  "meta": {
+    "title": "BoatExperts — Free Marine Diagnostics Help From a Certified Tech",
+    "description": "Boat acting up and you're not sure why? Talk to a certified marine technician for free before you spend money guessing at parts or paying for a shop visit.",
+    "og_image": "assets/og-image.png"
+  },
+  "logo": {
+    "text": "BoatExperts",
+    "image": null
+  },
+  "phone": "+1 (800) 555-0192",
+  "advisors": [
+    {
+      "name": "Frank Deluca",
+      "specialty": "Marine Diagnostics & Engine Tech",
+      "bio": "18 years diagnosing inboard and outboard problems across gasoline and diesel engines. Frank has a reputation for nailing the root cause on the first call — not after three parts swaps.",
+      "avatar": "https://placehold.co/96x96/dbeafe/3b82f6?text=FD"
+    },
+    {
+      "name": "Carla Reyes",
+      "specialty": "Electrical & Systems Diagnostics",
+      "bio": "ABYC-certified electrical tech with 10 years troubleshooting bilge pumps, ignition systems, charging circuits, and onboard electronics. Nothing random about boat electrics once you know where to look.",
+      "avatar": "https://placehold.co/96x96/fce7f3/db2777?text=CR"
+    },
+    {
+      "name": "Ben Okafor",
+      "specialty": "Sterndrive & Outboard Specialist",
+      "bio": "Volvo Penta and Mercury-certified tech with 12 years in the field. If it overheats, misfires, or won't start, Ben knows the likely causes before you finish describing the symptoms.",
+      "avatar": "https://placehold.co/96x96/dcfce7/16a34a?text=BO"
+    }
+  ],
+  "modal": {
+    "topic": "boat problem"
+  },
+  "hero": {
+    "headline": "Boat acting up? Find out why before you spend a dollar.",
+    "subheadline": "Overheating, misfiring, electrical gremlins, mysterious alarms — guessing at parts gets expensive fast. Describe the problem to a certified marine tech and get a real diagnosis, for free.",
+    "cta_text": "Describe the Problem",
+    "cta_href": "#form",
+    "form_note": "Free. No commitment. We'll match you with a tech within 24 hours.",
+    "secondary_cta": { "text": "See how it works", "href": "#how-it-works" },
+    "image": "https://placehold.co/600x480/fefce8/fde047?text=Boat+diagnostics"
+  },
+  "social_proof": {
+    "headline": "Certified across engines from",
+    "logos": [
+      { "name": "Yamaha", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Yamaha" },
+      { "name": "Mercury", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Mercury" },
+      { "name": "Volvo Penta", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Volvo+Penta" },
+      { "name": "Mercruiser", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=MerCruiser" },
+      { "name": "Yanmar", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Yanmar" }
+    ]
+  },
+  "benefits": {
+    "headline": "Parts-swapping without a diagnosis is expensive",
+    "subheadline": "The average boat owner spends $400 replacing the wrong parts before finding the real problem. A free 30-minute call usually finds it.",
+    "items": [
+      {
+        "title": "Stop guessing at parts",
+        "body": "Fuel pump, thermostat, impeller, injectors — the symptoms often point to multiple possibilities. Your tech will narrow it down based on how, when, and where the problem shows up."
+      },
+      {
+        "title": "Know before you call a shop",
+        "body": "Going into a marine shop without a diagnosis means paying shop rates to figure out what you could have known for free. Walk in knowing exactly what's wrong and what it should cost to fix."
+      },
+      {
+        "title": "Fix it yourself if you can",
+        "body": "A lot of common boat problems are DIY-friendly once you know what you're dealing with. Your tech will tell you honestly whether it's a wrench job or something that needs professional hands."
+      }
+    ]
+  },
+  "how_it_works": {
+    "headline": "How it works",
+    "subheadline": "Describe the symptom. We'll find the cause.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell us about the problem",
+        "body": "What's happening, when it happens, how long it's been going on, and anything you've already tried. The more detail, the faster your tech can zero in.",
+        "image": "https://placehold.co/560x380/f0f9ff/93c5fd?text=Describe+the+problem"
+      },
+      {
+        "number": "02",
+        "title": "Walk through it with a diagnostic tech",
+        "body": "A certified marine technician who knows your engine type will ask the right questions on a live video call and work through the most likely causes with you.",
+        "image": "https://placehold.co/560x380/f0fdf4/86efac?text=Talk+it+through"
+      },
+      {
+        "number": "03",
+        "title": "Get a clear answer and a fix plan",
+        "body": "Before the call ends you'll know what's most likely wrong, what parts you need (if any), and whether it's a DIY job or a shop job — with a realistic cost estimate.",
+        "image": "https://placehold.co/560x380/fefce8/fde047?text=Your+fix+plan"
+      }
+    ]
+  },
+  "testimonials": {
+    "headline": "What boaters said after their session",
+    "items": [
+      {
+        "quote": "Engine kept overheating at WOT. I'd already replaced the impeller. My tech asked two questions and told me it was a blocked telltale. Ten-minute fix. Saved me a $300 shop visit.",
+        "name": "Mike Svensson",
+        "role": "2018 Chaparral 21 SSi, Lake Erie",
+        "avatar": "https://placehold.co/48x48/dbeafe/3b82f6?text=MS"
+      },
+      {
+        "quote": "Random bilge alarm going off mid-trip. No water in the bilge. My tech walked me through it in 20 minutes — float switch had corroded. Replaced it for $12.",
+        "name": "Rachel Nguyen",
+        "role": "2020 Boston Whaler 270 Dauntless, Tampa Bay",
+        "avatar": "https://placehold.co/48x48/dcfce7/22c55e?text=RN"
+      },
+      {
+        "quote": "Had a rough idle at low RPM all season. Took it to a shop twice, they couldn't replicate it. Described it to my BoatExperts tech and he diagnosed a fuel pressure issue in 30 minutes.",
+        "name": "Gary Thornton",
+        "role": "2014 Regal 2100 RX, Puget Sound",
+        "avatar": "https://placehold.co/48x48/fef9c3/eab308?text=GT"
+      }
+    ]
+  },
+  "form": {
+    "headline": "Describe your boat problem — we'll find the cause",
+    "subheadline": "Tell us the symptoms and your engine type. Your tech will reach out within 24 hours.",
+    "embed_code": null
+  },
+  "footer": {
+    "copyright": "© 2026 BoatExperts. All rights reserved.",
+    "links": [
+      { "label": "Home", "href": "index.html" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ]
+  },
+  "theme": "theme.css"
+}

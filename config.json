@@ -1,0 +1,103 @@
+{
+  "site_name": "BoatExperts",
+  "gtm_id": "",
+  "meta": {
+    "title": "BoatExperts — Certified Marine Technicians, On Demand",
+    "description": "BoatExperts connects boat owners with certified marine technicians for free virtual consultations. Whether you're commissioning for spring, upgrading electronics, or diagnosing a problem — we help you get it right.",
+    "og_image": "assets/og-image.png"
+  },
+  "logo": {
+    "text": "BoatExperts",
+    "image": null
+  },
+  "nav": [
+    { "label": "Services", "href": "#services" },
+    { "label": "About", "href": "#about" },
+    { "label": "Get Help", "href": "#cta" }
+  ],
+  "hero": {
+    "headline": "Expert help for whatever your boat needs.",
+    "subheadline": "BoatExperts connects you with certified marine technicians for free virtual consultations. Get the right advice, the right parts list, and the confidence to get it done.",
+    "primary_cta": { "text": "See our services", "href": "#services" },
+    "secondary_cta": { "text": "How it works", "href": "#about" },
+    "image": "https://placehold.co/640x480/e0f2fe/7dd3fc?text=Boat+on+water"
+  },
+  "services": {
+    "headline": "What we help with",
+    "subheadline": "Pick the service that matches where you're at. Each one pairs you with a specialist who knows that specific job inside and out.",
+    "items": [
+      {
+        "title": "Spring Commissioning",
+        "body": "Getting your boat back in the water after winter? Don't guess. Our techs walk you through every step and send you a personalised parts list before you splash.",
+        "cta_text": "Book a free session",
+        "cta_href": "spring.html",
+        "image": "https://placehold.co/480x300/f0fdf4/86efac?text=Spring+Launch"
+      },
+      {
+        "title": "Electronics Upgrades",
+        "body": "Thinking about a new chartplotter, autopilot, or VHF? Talk to a tech before you buy. We'll tell you exactly what's compatible with your boat — and what to skip.",
+        "cta_text": "Get buying advice",
+        "cta_href": "electronics.html",
+        "image": "https://placehold.co/480x300/f0f9ff/93c5fd?text=Marine+Electronics"
+      },
+      {
+        "title": "Diagnostics & Troubleshooting",
+        "body": "Boat acting up and you're not sure why? Describe the problem to one of our techs and we'll help you figure out what's wrong before you spend money on a guess.",
+        "cta_text": "Get free diagnostics help",
+        "cta_href": "diagnostics.html",
+        "image": "https://placehold.co/480x300/fefce8/fde047?text=Diagnostics"
+      }
+    ]
+  },
+  "about": {
+    "headline": "Real technicians. Not a chatbot.",
+    "body": "BoatExperts was built because getting good marine advice is harder than it should be. Forums are full of contradictions. Dealers upsell. YouTube only gets you so far.\n\nEvery consultation is with a certified marine technician — someone who has physically worked on boats like yours, in conditions like yours. We match you based on your engine type, hull, and the specific job you're doing.\n\nThe consultation is free because we make money when you buy the parts and gear your tech recommends. You get honest advice. We point you to the right products. Everyone wins.",
+    "stats": [
+      { "value": "2,400+", "label": "Consultations completed" },
+      { "value": "94%", "label": "Of customers would recommend us" },
+      { "value": "48 hrs", "label": "Average time from booking to call" },
+      { "value": "12+", "label": "Certified techs on the platform" }
+    ],
+    "image": "https://placehold.co/560x420/f9fafb/9ca3af?text=Our+team"
+  },
+  "testimonials": {
+    "headline": "From boaters who've used it",
+    "items": [
+      {
+        "quote": "I've been launching the same boat for six years and still learned three things I'd been doing wrong. Caught a cracked impeller housing before it became a tow bill.",
+        "name": "Dave Kowalski",
+        "role": "2019 Sea Ray 230 SLX, Lake Michigan",
+        "avatar": "https://placehold.co/48x48/dbeafe/3b82f6?text=DK"
+      },
+      {
+        "quote": "I had a Garmin chartplotter in my cart and was about to check out. My tech talked me out of it — wrong transducer for my hull. Saved me $400 and a return headache.",
+        "name": "Chris Flanagan",
+        "role": "2018 Catalina 355, San Diego",
+        "avatar": "https://placehold.co/48x48/dcfce7/22c55e?text=CF"
+      },
+      {
+        "quote": "First season with a new-to-me boat. Had no idea where to start. My tech walked me through everything in 45 minutes. Splashed two days later without a single issue.",
+        "name": "Tom Briggs",
+        "role": "2015 Grady-White Canyon 271, Cape Cod",
+        "avatar": "https://placehold.co/48x48/fef9c3/eab308?text=TB"
+      }
+    ]
+  },
+  "cta_band": {
+    "headline": "Not sure where to start?",
+    "subheadline": "Tell us about your boat and what you're trying to do. We'll point you in the right direction — no commitment required.",
+    "cta_text": "Talk to a tech for free",
+    "cta_href": "index.html#form"
+  },
+  "footer": {
+    "copyright": "© 2026 BoatExperts. All rights reserved.",
+    "links": [
+      { "label": "Spring Commissioning", "href": "spring.html" },
+      { "label": "Electronics", "href": "electronics.html" },
+      { "label": "Diagnostics", "href": "diagnostics.html" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ]
+  },
+  "theme": "theme.css"
+}

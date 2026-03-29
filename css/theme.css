@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Example Site — Theme
+   CSS custom property overrides only.
+   These values replace the defaults defined in shared/css/base.css.
+   ========================================================================== */
+
+:root {
+  --color-primary: #0057ff;
+  --color-secondary: #00c2a8;
+  --color-accent: #ff5c35;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+}

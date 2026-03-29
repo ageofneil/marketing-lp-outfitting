@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block head %}
+<meta name="description" content="{{ config.meta.description }}" />
+<title>{{ config.meta.title }}</title>
+{% if config.meta.og_image %}
+<meta property="og:title" content="{{ config.meta.title }}" />
+<meta property="og:description" content="{{ config.meta.description }}" />
+<meta property="og:image" content="{{ config.meta.og_image }}" />
+<meta property="og:type" content="website" />
+{% endif %}
+{% endblock %}
+
+{% block hero %}{% include "partials/hero.html" %}{% endblock %}
+
+{% block social_proof %}
+{% if config.social_proof %}
+<div class="social-proof-inner container">
+  <p class="social-proof-label">{{ config.social_proof.headline }}</p>
+  <div class="logo-row">
+    {% for logo in config.social_proof.logos %}
+    <img src="{{ logo.image }}" alt="{{ logo.name }}" class="brand-logo" />
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+{% if config.benefits %}
+<section class="section section--benefits" id="benefits">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-headline">{{ config.benefits.headline }}</h2>
+      {% if config.benefits.subheadline %}
+      <p class="section-subheadline">{{ config.benefits.subheadline }}</p>
+      {% endif %}
+    </div>
+    <div class="benefits-grid">
+      {% for item in config.benefits['items'] %}
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true"></div>
+        <h3 class="benefit-title">{{ item.title }}</h3>
+        <p class="benefit-body">{{ item.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if config.how_it_works %}
+<section class="section section--how" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-headline">{{ config.how_it_works.headline }}</h2>
+      {% if config.how_it_works.subheadline %}
+      <p class="section-subheadline">{{ config.how_it_works.subheadline }}</p>
+      {% endif %}
+    </div>
+    <div class="steps">
+      {% for step in config.how_it_works.steps %}
+      <div class="step {% if loop.index is even %}step--reverse{% endif %}">
+        <div class="step-text">
+          <span class="step-number">{{ step.number }}</span>
+          <h3 class="step-title">{{ step.title }}</h3>
+          <p class="step-body">{{ step.body }}</p>
+        </div>
+        <div class="step-image">
+          <img src="{{ step.image }}" alt="{{ step.title }}" />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if config.testimonials %}
+<section class="section section--testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-headline">{{ config.testimonials.headline }}</h2>
+    </div>
+    <div class="testimonials-grid">
+      {% for item in config.testimonials['items'] %}
+      <div class="testimonial-card">
+        <blockquote class="testimonial-quote">"{{ item.quote }}"</blockquote>
+        <div class="testimonial-author">
+          <img src="{{ item.avatar }}" alt="{{ item.name }}" class="testimonial-avatar" />
+          <div class="testimonial-meta">
+            <span class="testimonial-name">{{ item.name }}</span>
+            <span class="testimonial-role">{{ item.role }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% endblock %}
+
+{% block form %}
+{% if config.form %}
+<div class="container">
+  <div class="form-inner">
+    {% if config.form.headline %}
+    <h2 class="form-headline">{{ config.form.headline }}</h2>
+    {% endif %}
+    {% if config.form.subheadline %}
+    <p class="form-subheadline">{{ config.form.subheadline }}</p>
+    {% endif %}
+    <button class="btn btn-primary" data-open-advisor>{{ config.hero.cta_text }}</button>
+    {% if config.phone %}
+    <p class="form-phone-note">Prefer to call? <a href="tel:{{ config.phone }}">{{ config.phone }}</a></p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+window.__advisorConfig = {
+  advisors: {{ config.advisors | tojson }},
+  topic: {{ config.modal.topic | tojson }}
+};
+</script>
+{% endblock %}

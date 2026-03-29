@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% block head %}
+  {% include "partials/head.html" %}
+  {% endblock %}
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  {% include "partials/pixel.html" %}
+</head>
+<body>
+  {% if config.gtm_id %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config.gtm_id }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% endif %}
+
+  <header class="site-header" role="banner">
+    {% include "partials/header.html" %}
+  </header>
+
+  <main role="main">
+
+    <section class="home-hero" aria-label="Hero">
+      {% block hero %}{% endblock %}
+    </section>
+
+    <section class="home-services" id="services" aria-label="Services">
+      {% block services %}{% endblock %}
+    </section>
+
+    <section class="home-about" id="about" aria-label="About">
+      {% block about %}{% endblock %}
+    </section>
+
+    <section class="home-testimonials" id="testimonials" aria-label="Testimonials">
+      {% block testimonials %}{% endblock %}
+    </section>
+
+    <section class="home-cta-band" aria-label="Get started">
+      {% block cta_band %}{% endblock %}
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    {% block footer %}
+    {% include "partials/footer.html" %}
+    {% endblock %}
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

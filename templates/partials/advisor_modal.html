@@ -1,0 +1,103 @@
+<div class="advisor-overlay" id="advisorModal" role="dialog" aria-modal="true" aria-label="Find your expert" hidden>
+  <div class="advisor-card">
+
+    <button class="advisor-close" id="advisorClose" aria-label="Close">✕</button>
+
+    <div class="advisor-progress">
+      <span class="advisor-progress-dot" data-step="1"></span>
+      <span class="advisor-progress-dot" data-step="2"></span>
+      <span class="advisor-progress-dot" data-step="3"></span>
+      <span class="advisor-progress-dot" data-step="4"></span>
+    </div>
+
+    <!-- Step 1: About your boat -->
+    <div class="advisor-step" id="advisorStep1">
+      <h2 class="advisor-title">Tell us about your boat</h2>
+      <p class="advisor-sub" id="advisorTopicLine"></p>
+      <form id="advisorForm1">
+        <div class="form-group">
+          <label class="form-label" for="advisorBoatType">What type of boat do you have?</label>
+          <select class="form-input" id="advisorBoatType" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Powerboat</option>
+            <option>Sailboat</option>
+            <option>Pontoon</option>
+            <option>Personal watercraft (PWC)</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="advisorBoatLength">How long is it?</label>
+          <select class="form-input" id="advisorBoatLength" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Under 20ft</option>
+            <option>20–30ft</option>
+            <option>30–40ft</option>
+            <option>40ft+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="advisorDetails">
+            Tell us a bit more <span class="form-label-optional">(optional)</span>
+          </label>
+          <textarea class="form-input" id="advisorDetails" rows="3" placeholder="Anything that'll help us match you with the right expert..."></textarea>
+        </div>
+        <button class="btn btn-primary btn--full" type="submit">Find my expert →</button>
+      </form>
+    </div>
+
+    <!-- Step 2: Matching animation -->
+    <div class="advisor-step" id="advisorStep2" hidden>
+      <div class="advisor-matching">
+        <div class="advisor-spinner"></div>
+        <p class="advisor-matching-text" id="advisorMatchingText">Finding the right expert for you...</p>
+      </div>
+    </div>
+
+    <!-- Step 3: Meet your match -->
+    <div class="advisor-step" id="advisorStep3" hidden>
+      <p class="advisor-eyebrow" id="advisorMatchEyebrow">We found your match</p>
+      <div class="advisor-profile">
+        <img class="advisor-profile-avatar" id="advisorAvatar" src="" alt="" />
+        <h2 class="advisor-profile-name" id="advisorName"></h2>
+        <p class="advisor-profile-specialty" id="advisorSpecialty"></p>
+        <p class="advisor-profile-bio" id="advisorBio"></p>
+      </div>
+      <button class="btn btn-primary btn--full" id="advisorStep3Btn">Connect →</button>
+    </div>
+
+    <!-- Step 4: Contact form -->
+    <div class="advisor-step" id="advisorStep4" hidden>
+      <div class="advisor-mini-profile" id="advisorMini">
+        <img class="advisor-mini-avatar" id="advisorMiniAvatar" src="" alt="" />
+        <div class="advisor-mini-text">
+          <span class="advisor-mini-name" id="advisorMiniName"></span>
+          <span class="advisor-mini-specialty" id="advisorMiniSpecialty"></span>
+        </div>
+      </div>
+      <h2 class="advisor-title">How should they reach you?</h2>
+      <form id="advisorForm4">
+        <div class="form-group">
+          <label class="form-label" for="advisorYourName">Your name</label>
+          <input class="form-input" type="text" id="advisorYourName" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="advisorEmail">Email address</label>
+          <input class="form-input" type="email" id="advisorEmail" placeholder="jane@example.com" required />
+        </div>
+        <button class="btn btn-primary btn--full" type="submit" id="advisorSubmitBtn">Send my details</button>
+        <p class="advisor-note">Free. No commitment. Expect a reply within 24 hours.</p>
+      </form>
+    </div>
+
+    <!-- Step 5: Success -->
+    <div class="advisor-step" id="advisorStep5" hidden>
+      <div class="advisor-success">
+        <div class="advisor-success-icon">✓</div>
+        <h2 class="advisor-title">You're all set.</h2>
+        <p class="advisor-sub" id="advisorSuccessMsg"></p>
+      </div>
+    </div>
+
+  </div>
+</div>

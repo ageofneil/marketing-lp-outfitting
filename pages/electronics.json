@@ -1,0 +1,135 @@
+{
+  "site_name": "BoatExperts",
+  "gtm_id": "",
+  "meta": {
+    "title": "BoatExperts — Free Marine Electronics Buying Advice From a Certified Tech",
+    "description": "Not sure which chartplotter, autopilot, or VHF to buy — or if they'll even work together on your boat? Talk to a certified marine electronics tech for free before you spend a dollar.",
+    "og_image": "assets/og-image.png"
+  },
+  "logo": {
+    "text": "BoatExperts",
+    "image": null
+  },
+  "phone": "+1 (800) 555-0192",
+  "advisors": [
+    {
+      "name": "Mike Torres",
+      "specialty": "Marine Electronics Specialist",
+      "bio": "12 years installing chartplotters, autopilots, and NMEA networks on the Pacific Coast. If it has a screen or a wire, Mike knows it cold.",
+      "avatar": "https://placehold.co/96x96/dbeafe/3b82f6?text=MT"
+    },
+    {
+      "name": "Jen Calloway",
+      "specialty": "Navigation & Electronics",
+      "bio": "Former commercial marine tech turned consultant. Specialises in Garmin and Raymarine installs, with a focus on getting mixed systems to talk to each other.",
+      "avatar": "https://placehold.co/96x96/fce7f3/db2777?text=JC"
+    },
+    {
+      "name": "Dave Park",
+      "specialty": "Electronics & Electrical Systems",
+      "bio": "ABYC-certified electrical technician with 8 years on the Great Lakes. Known for clean installs and zero-mystery wiring diagrams.",
+      "avatar": "https://placehold.co/96x96/dcfce7/16a34a?text=DP"
+    }
+  ],
+  "modal": {
+    "topic": "electronics upgrade"
+  },
+  "hero": {
+    "headline": "Before you buy marine electronics — talk to an expert first.",
+    "subheadline": "Chartplotters, autopilots, fishfinders, VHF — the wrong combination is an expensive mistake. Get a free session with a certified marine electronics tech who'll tell you exactly what to buy for your boat.",
+    "cta_text": "Get Free Advice",
+    "cta_href": "#form",
+    "form_note": "Free. No commitment. We'll match you with a tech within 24 hours.",
+    "secondary_cta": { "text": "See how it works", "href": "#how-it-works" },
+    "image": "https://placehold.co/600x480/e0f2fe/7dd3fc?text=Marine+electronics"
+  },
+  "social_proof": {
+    "headline": "We know the gear from",
+    "logos": [
+      { "name": "Garmin", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Garmin" },
+      { "name": "Raymarine", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Raymarine" },
+      { "name": "Simrad", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Simrad" },
+      { "name": "Furuno", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Furuno" },
+      { "name": "Standard Horizon", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Std+Horizon" }
+    ]
+  },
+  "benefits": {
+    "headline": "Marine electronics are easy to buy wrong",
+    "subheadline": "Compatibility issues, wrong transducer for your hull, displays that don't network — mistakes you only discover after the return window closes.",
+    "items": [
+      {
+        "title": "Will it fit your helm?",
+        "body": "Display sizes, sunlight readability, mounting depth — what looks great in a YouTube video can be completely wrong for your dash. We'll spec it to your exact helm layout."
+      },
+      {
+        "title": "Will it all work together?",
+        "body": "Mixing brands across chartplotter, autopilot, and VHF is where most boaters get stuck. We'll build you a compatible system that shares GPS, depth, and AIS data from day one."
+      },
+      {
+        "title": "What do you actually need?",
+        "body": "Marine electronics stores push premium packages. We'll tell you what's genuinely worth buying for how you use your boat — and what you can skip entirely."
+      }
+    ]
+  },
+  "how_it_works": {
+    "headline": "How it works",
+    "subheadline": "Tell us what you're trying to do. We'll build your shopping list.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell us about your boat and goals",
+        "body": "Make, model, engine, how you use the water — fishing, cruising, offshore? What do you have now and what are you trying to add or upgrade? Two minutes to fill in.",
+        "image": "https://placehold.co/560x380/f0f9ff/93c5fd?text=Your+boat+%26+goals"
+      },
+      {
+        "number": "02",
+        "title": "Talk it through with your tech",
+        "body": "A certified marine electronics tech will walk you through your options on a live video call — what's compatible, what's not, and what actually makes sense for your setup and budget.",
+        "image": "https://placehold.co/560x380/f0fdf4/86efac?text=Talk+it+through"
+      },
+      {
+        "number": "03",
+        "title": "Get your exact shopping list",
+        "body": "Before the call ends you'll have a complete, compatible parts list — every unit, cable, transducer, and mounting bracket you need. Nothing missing, nothing wasted.",
+        "image": "https://placehold.co/560x380/fefce8/fde047?text=Your+shopping+list"
+      }
+    ]
+  },
+  "testimonials": {
+    "headline": "What boaters said after their session",
+    "items": [
+      {
+        "quote": "I had a Garmin chartplotter in my cart and was about to check out. My tech talked me out of it — wrong transducer for my hull. Saved me $400 and a return headache.",
+        "name": "Chris Flanagan",
+        "role": "2018 Catalina 355, San Diego",
+        "avatar": "https://placehold.co/48x48/dbeafe/3b82f6?text=CF"
+      },
+      {
+        "quote": "I wanted a fishfinder and an autopilot but had no idea if they'd talk to each other. My tech built me a full Simrad system that networks perfectly. I wouldn't have figured that out alone.",
+        "name": "Amanda Tse",
+        "role": "2020 Grady-White Freedom 285, Puget Sound",
+        "avatar": "https://placehold.co/48x48/dcfce7/22c55e?text=AT"
+      },
+      {
+        "quote": "Spent 20 minutes on the call and walked away knowing exactly what to order. No guessing, no forum rabbit holes. Just a list and a plan.",
+        "name": "Jorge Medina",
+        "role": "2016 Sea Ray 350 SLX, Tampa Bay",
+        "avatar": "https://placehold.co/48x48/fef9c3/eab308?text=JM"
+      }
+    ]
+  },
+  "form": {
+    "headline": "Get your free electronics consultation",
+    "subheadline": "Tell us your boat and what you're trying to upgrade. Your tech will reach out within 24 hours.",
+    "embed_code": null
+  },
+  "footer": {
+    "copyright": "© 2026 BoatExperts. All rights reserved.",
+    "links": [
+      { "label": "Home", "href": "index.html" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ]
+  },
+  "theme": "theme.css"
+}
