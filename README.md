@@ -97,4 +97,32 @@ dist/              # build output — this is what gets deployed
 
 ## Deployment
 
-Coming soon.
+Deployed on [Vercel](https://vercel.com), triggered automatically by pushing to GitHub.
+
+| Branch | Environment |
+|---|---|
+| `develop` | Preview |
+| `main` | Production |
+
+**Workflow:**
+1. Do all work and testing locally with Docker
+2. Push to `develop` → deploys to preview
+3. Merge `develop` into `main` → deploys to production
+
+```bash
+# Merge develop to production
+git checkout main
+git merge develop
+git push origin main
+git checkout develop
+```
+
+---
+
+## Environment Variables
+
+Set in Vercel under **Project Settings → Environment Variables** — never committed to the repo.
+
+| Variable | Description |
+|---|---|
+| `KLAVIYO_API_KEY` | Klaviyo private API key — required for lead capture |
