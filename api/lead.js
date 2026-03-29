@@ -47,28 +47,12 @@ module.exports = async function handler(req, res) {
       return res.status(500).json({ error: 'Failed to create profile' });
     }
 
-    // 2. Subscribe profile to list (async job — fires and continues)
-    await fetch('https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/', {
+    // 2. Add profile to list
+    await fetch(`https://a.klaviyo.com/api/lists/${listId}/relationships/profiles/`, {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        data: {
-          type: 'profile-subscription-bulk-create-job',
-          attributes: {
-            profiles: {
-              data: [{
-                type: 'profile',
-                id: profileId,
-                attributes: {
-                  subscriptions: {
-                    email: { marketing: { consent: 'SUBSCRIBED' } }
-                  }
-                }
-              }]
-            },
-            list_id: listId
-          }
-        }
+        data: [{ type: 'profile', id: profileId }]
       })
     });
 
