@@ -29,7 +29,11 @@
     <div class="benefits-grid">
       {% for item in config.benefits['items'] %}
       <div class="benefit-card">
-        <div class="benefit-icon" aria-hidden="true"></div>
+        <div class="benefit-icon" aria-hidden="true">
+          {% if item.icon %}
+          <img src="{{ item.icon }}" alt="" />
+          {% endif %}
+        </div>
         <h3 class="benefit-title">{{ item.title }}</h3>
         <p class="benefit-body">{{ item.body }}</p>
       </div>

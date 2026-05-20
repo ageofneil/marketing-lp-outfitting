@@ -35,16 +35,17 @@
     "cta_href": "#form",
     "form_note": "Free. No commitment. We'll match you with a tech within 24 hours.",
     "secondary_cta": { "text": "See how it works", "href": "#how-it-works" },
-    "image": "https://placehold.co/600x480/e0f2fe/7dd3fc?text=Marine+electronics"
+    "image": "assets/bhn-hero.png"
   },
   "social_proof": {
     "headline": "We know the gear from",
     "logos": [
-      { "name": "Garmin", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Garmin" },
-      { "name": "Raymarine", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Raymarine" },
-      { "name": "Simrad", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Simrad" },
-      { "name": "Furuno", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Furuno" },
-      { "name": "Standard Horizon", "image": "https://placehold.co/120x36/e5e7eb/9ca3af?text=Std+Horizon" }
+      { "name": "Raymarine", "image": "https://defender.com/assets/cms/home/brand-logo/logo-raymarine.png" },
+      { "name": "B&G", "image": "https://defender.com/assets/cms/home/brand-logo/logo-bandg.png" },
+      { "name": "Simrad", "image": "https://defender.com/assets/cms/home/brand-logo/logo-simrad.png" },
+      { "name": "Vesper", "image": "https://defender.com/assets/cms/home/brand-logo/logo-vesper.png" },
+      { "name": "Standard Horizon", "image": "https://defender.com/assets/cms/home/brand-logo/logo-standard-horizon.png" },
+      { "name": "Shakespeare", "image": "https://defender.com/assets/cms/home/brand-logo/logo-shakespear.png" }
     ]
   },
   "benefits": {
@@ -53,14 +54,17 @@
     "items": [
       {
         "title": "Will it fit your helm?",
+        "icon": "assets/icons/helm.svg",
         "body": "Display sizes, sunlight readability, mounting depth — what looks great in a YouTube video can be completely wrong for your dash. We'll spec it to your exact helm layout."
       },
       {
         "title": "Will it all work together?",
+        "icon": "assets/icons/network.svg",
         "body": "Mixing brands across chartplotter, autopilot, and VHF is where most boaters get stuck. We'll build you a compatible system that shares GPS, depth, and AIS data from day one."
       },
       {
         "title": "What do you actually need?",
+        "icon": "assets/icons/target.svg",
         "body": "Marine electronics stores push premium packages. We'll tell you what's genuinely worth buying for how you use your boat — and what you can skip entirely."
       }
     ]
@@ -73,19 +77,19 @@
         "number": "01",
         "title": "Tell us about your boat and goals",
         "body": "Make, model, engine, how you use the water — fishing, cruising, offshore? What do you have now and what are you trying to add or upgrade? Two minutes to fill in.",
-        "image": "https://placehold.co/560x380/f0f9ff/93c5fd?text=Your+boat+%26+goals"
+        "image": "assets/bhn-goals.png"
       },
       {
         "number": "02",
         "title": "Talk it through with your tech",
         "body": "A certified marine electronics tech will walk you through your options on a live video call — what's compatible, what's not, and what actually makes sense for your setup and budget.",
-        "image": "https://placehold.co/560x380/f0fdf4/86efac?text=Talk+it+through"
+        "image": "assets/bhn-talk.png"
       },
       {
         "number": "03",
         "title": "Get your exact shopping list",
         "body": "Before the call ends you'll have a complete, compatible parts list — every unit, cable, transducer, and mounting bracket you need. Nothing missing, nothing wasted.",
-        "image": "https://placehold.co/560x380/fefce8/fde047?text=Your+shopping+list"
+        "image": "assets/bhn-shop.png"
       }
     ]
   },
