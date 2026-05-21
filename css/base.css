@@ -306,8 +306,12 @@ p:last-child {
   filter: blur(15px);
 }
 
-.hero-image img {
+.hero-image img,
+.hero-image video {
   width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center 20%;
   border-radius: var(--radius-2xl);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
@@ -315,10 +319,35 @@ p:last-child {
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
-.hero-image img:hover {
+.hero-image img:hover,
+.hero-image video:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5),
     0 0 70px rgba(0, 229, 255, 0.2);
+}
+
+.unmute-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+.unmute-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 
 /* --------------------------------------------------------------------------

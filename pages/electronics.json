@@ -29,7 +29,8 @@
       "Certified marine electronics experts"
     ],
     "secondary_cta": null,
-    "image": "assets/hero-electronics.jpg"
+    "image": "assets/hero-electronics.jpg",
+    "video": "assets/videos/electronics-hero.mp4"
   },
   "social_proof": {
     "headline": "We know the gear from",
