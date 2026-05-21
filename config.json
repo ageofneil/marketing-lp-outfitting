@@ -8,7 +8,7 @@
   },
   "logo": {
     "text": "BoatExperts",
-    "image": null
+    "image": "assets/logo/boathelpnetwork-logo-color.svg"
   },
   "nav": [
     { "label": "Services", "href": "#services" },
