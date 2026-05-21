@@ -15,27 +15,52 @@
       <h2 class="advisor-title">Tell us about your boat</h2>
       <p class="advisor-sub" id="advisorTopicLine"></p>
       <form id="advisorForm1">
-        <div class="form-group">
-          <label class="form-label" for="advisorBoatType">What type of boat do you have?</label>
-          <select class="form-input" id="advisorBoatType" required>
-            <option value="" disabled selected>Select one</option>
-            <option>Powerboat</option>
-            <option>Sailboat</option>
-            <option>Pontoon</option>
-            <option>Personal watercraft (PWC)</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="advisorBoatLength">How long is it?</label>
-          <select class="form-input" id="advisorBoatLength" required>
-            <option value="" disabled selected>Select one</option>
-            <option>Under 20ft</option>
-            <option>20–30ft</option>
-            <option>30–40ft</option>
-            <option>40ft+</option>
-          </select>
-        </div>
+        <fieldset class="radio-pill-group">
+          <legend class="form-label">What type of boat do you have?</legend>
+          <div class="radio-pill-grid">
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatType" value="Powerboat" required>
+              <span>Powerboat</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatType" value="Sailboat" required>
+              <span>Sailboat</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatType" value="Pontoon" required>
+              <span>Pontoon</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatType" value="PWC" required>
+              <span>PWC</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatType" value="Other" required>
+              <span>Other</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="radio-pill-group">
+          <legend class="form-label">How long is it?</legend>
+          <div class="radio-pill-grid">
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatLength" value="Under 20ft" required>
+              <span>Under 20ft</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatLength" value="20–30ft" required>
+              <span>20–30ft</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatLength" value="30–40ft" required>
+              <span>30–40ft</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="advisorBoatLength" value="40ft+" required>
+              <span>40ft+</span>
+            </label>
+          </div>
+        </fieldset>
         <div class="form-group">
           <label class="form-label" for="advisorDetails">
             Tell us a bit more <span class="form-label-optional">(optional)</span>

@@ -97,8 +97,10 @@
     // Step 1 submit → matching animation → step 3
     el('advisorForm1').addEventListener('submit', function (e) {
       e.preventDefault();
-      boatType = el('advisorBoatType').value;
-      boatLength = el('advisorBoatLength').value;
+      var typeEl = document.querySelector('input[name="advisorBoatType"]:checked');
+      boatType = typeEl ? typeEl.value : '';
+      var lengthEl = document.querySelector('input[name="advisorBoatLength"]:checked');
+      boatLength = lengthEl ? lengthEl.value : '';
       boatNotes = el('advisorDetails').value;
       pushEvent('advisor_boat_details', { topic: topic, boat_type: boatType, boat_length: boatLength });
       matched = pick();

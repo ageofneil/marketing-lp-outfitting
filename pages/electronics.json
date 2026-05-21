@@ -4,37 +4,31 @@
     "description": "Not sure which chartplotter, autopilot, or VHF to buy — or if they'll even work together on your boat? Talk to a certified marine electronics tech for free before you spend a dollar.",
     "og_image": "assets/og-image.png"
   },
-  "phone": "+1 (800) 555-0192",
+  "phone": null,
   "advisors": [
     {
-      "name": "Mike Torres",
-      "specialty": "Marine Electronics Specialist",
-      "bio": "12 years installing chartplotters, autopilots, and NMEA networks on the Pacific Coast. If it has a screen or a wire, Mike knows it cold.",
-      "avatar": "https://placehold.co/96x96/dbeafe/3b82f6?text=MT"
-    },
-    {
-      "name": "Jen Calloway",
-      "specialty": "Navigation & Electronics",
-      "bio": "Former commercial marine tech turned consultant. Specialises in Garmin and Raymarine installs, with a focus on getting mixed systems to talk to each other.",
-      "avatar": "https://placehold.co/96x96/fce7f3/db2777?text=JC"
-    },
-    {
-      "name": "Dave Park",
-      "specialty": "Electronics & Electrical Systems",
-      "bio": "ABYC-certified electrical technician with 8 years on the Great Lakes. Known for clean installs and zero-mystery wiring diagrams.",
-      "avatar": "https://placehold.co/96x96/dcfce7/16a34a?text=DP"
+      "name": "Kevin Ridarelli",
+      "specialty": "Electronics Specialist",
+      "bio": "Electronics Specialist at Defender Marine. A certified rescue diver and seasoned tech who leverages his hands-on experience to help you build the perfect setup.",
+      "avatar": "https://defender.com/assets/graphics/defender/web/outfitting-service/team/kevin.png"
     }
   ],
   "modal": {
     "topic": "electronics upgrade"
   },
   "hero": {
-    "headline": "Before you buy marine electronics — talk to an expert first.",
-    "subheadline": "Chartplotters, autopilots, fishfinders, VHF — the wrong combination is an expensive mistake. Get a free session with a certified marine electronics tech who'll tell you exactly what to buy for your boat.",
-    "cta_text": "Get Free Advice",
+    "headline": "Most boaters buy marine electronics <span>wrong.</span>",
+    "subheadline": "Wrong transducer. Networking issues. Incompatible displays. Talk to a certified marine electronics expert before you buy.",
+    "cta_text": "Talk to an Expert",
     "cta_href": "#form",
     "form_note": "Free. No commitment. We'll match you with a tech within 24 hours.",
-    "secondary_cta": { "text": "See how it works", "href": "#how-it-works" },
+    "trust_signals": [
+      "Trusted by 10,000+ boaters",
+      "Free consultation",
+      "No purchase required",
+      "Certified marine electronics experts"
+    ],
+    "secondary_cta": null,
     "image": "assets/bhn-hero.png"
   },
   "social_proof": {
@@ -49,8 +43,8 @@
     ]
   },
   "benefits": {
-    "headline": "Marine electronics are easy to buy wrong",
-    "subheadline": "Compatibility issues, wrong transducer for your hull, displays that don't network — mistakes you only discover after the return window closes.",
+    "headline": "Before you buy marine electronics — talk to an expert first",
+    "subheadline": "Chartplotters, autopilots, fishfinders, VHF — the wrong combination is an expensive mistake. We'll tell you exactly what to buy for your boat.",
     "items": [
       {
         "title": "Will it fit your helm?",

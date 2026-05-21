@@ -4,9 +4,17 @@
    These values replace the defaults defined in base.css.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Custom Theme Overrides for Sleek High-Tech Marine Electronics */
+  --color-primary: #0066ff;
+  --color-primary-dark: #004ecc;
+  --color-secondary: #00e5ff; /* Vibrant neon cyan */
+  --color-bg-dark: #080d22;    /* Deep ocean navy */
+  --color-bg-dark-alt: #101633;
 }
+
