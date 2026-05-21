@@ -17,6 +17,18 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% endif %}
 
+  <header class="lp-header" role="banner">
+    <div class="lp-header-inner container">
+      <a href="/" class="site-logo" aria-label="{{ config.site_name }} home">
+        {% if config.logo and config.logo.image %}
+        <img src="{{ config.logo.image }}" alt="{{ config.site_name }} logo" class="logo-image" />
+        {% else %}
+        <span class="logo-text">{{ config.logo.text if config.logo else config.site_name }}</span>
+        {% endif %}
+      </a>
+    </div>
+  </header>
+
   <main role="main">
 
     <section class="hero" aria-label="Hero">
@@ -44,6 +56,11 @@
     {% include "partials/footer.html" %}
     {% endblock %}
   </footer>
+
+  <!-- Sticky mobile CTA — visible on small screens only -->
+  <div class="mobile-sticky-cta" aria-label="Get advice">
+    <button class="btn btn-primary btn--full" data-open-advisor>Get Free Advice</button>
+  </div>
 
   {% include "partials/advisor_modal.html" %}
 
