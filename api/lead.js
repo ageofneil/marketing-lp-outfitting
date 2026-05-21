@@ -56,11 +56,25 @@ module.exports = async function handler(req, res) {
         data: {
           type: 'profile-subscription-bulk-create-job',
           attributes: {
-            historical_import: false,
-            subscriptions: [{
-              channels: { email: ['MARKETING'] },
-              profile: { data: { type: 'profile', id: profileId } }
-            }]
+            custom_source: "Website Lead Form",
+            profiles: {
+              data: [
+                {
+                  type: 'profile',
+                  id: profileId,
+                  attributes: {
+                    email: email,
+                    subscriptions: {
+                      email: {
+                        marketing: {
+                          consent: 'SUBSCRIBED'
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
           },
           relationships: {
             list: {
