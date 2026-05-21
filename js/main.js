@@ -47,10 +47,38 @@
     });
   }
 
+  /**
+   * Toggle video mute state when the unmute button is clicked.
+   */
+  function initVideoUnmute() {
+    var video = document.getElementById('hero-video');
+    var btn = document.getElementById('unmute-btn');
+    if (!video || !btn) return;
+
+    var iconMuted = btn.querySelector('.icon-muted');
+    var iconUnmuted = btn.querySelector('.icon-unmuted');
+
+    btn.addEventListener('click', function() {
+      if (video.muted) {
+        video.muted = false;
+        iconMuted.style.display = 'none';
+        iconUnmuted.style.display = 'block';
+      } else {
+        video.muted = true;
+        iconMuted.style.display = 'block';
+        iconUnmuted.style.display = 'none';
+      }
+    });
+  }
+
   // Run after the DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSmoothScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+      initSmoothScroll();
+      initVideoUnmute();
+    });
   } else {
     initSmoothScroll();
+    initVideoUnmute();
   }
 })();
