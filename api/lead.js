@@ -3,7 +3,7 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, boat_type, boat_length, notes, topic, advisor } = req.body;
+  const { name, email, phone, boat_type, boat_length, notes, topic, advisor } = req.body;
   const apiKey = process.env.KLAVIYO_API_KEY;
 
   if (!apiKey) {
@@ -35,7 +35,7 @@ module.exports = async function handler(req, res) {
             email,
             first_name: firstName,
             last_name: lastName,
-            properties: { topic, boat_type, boat_length, notes, advisor }
+            properties: { topic, boat_type, boat_length, notes, advisor, phone }
           }
         }
       })
@@ -100,7 +100,8 @@ module.exports = async function handler(req, res) {
               boat_type,
               boat_length,
               notes,
-              advisor
+              advisor,
+              phone
             }
           }
         }

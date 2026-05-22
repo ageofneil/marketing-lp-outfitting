@@ -123,6 +123,7 @@
       e.preventDefault();
       var name = el('advisorYourName').value.trim() || 'there';
       var email = el('advisorEmail').value.trim();
+      var phone = el('advisorPhone').value.trim();
       var btn = el('advisorSubmitBtn');
       btn.disabled = true;
       btn.textContent = 'Sending...';
@@ -133,6 +134,7 @@
         body: JSON.stringify({
           name: name,
           email: email,
+          phone: phone,
           boat_type: boatType,
           boat_length: boatLength,
           notes: boatNotes,
